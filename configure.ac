@@ -11,8 +11,7 @@ AM_INIT_AUTOMAKE([1.9])
 AC_PROG_CC
 
 # Checks for libraries.
-# FIXME: Replace `main' with a function in `-lbz2':
-AC_CHECK_LIB([bz2], [BZ2_bzReadOpen])
+# (bz2 dependency removed - raw output mode)
 
 AC_CHECK_HEADERS([fcntl.h limits.h stddef.h stdint.h stdlib.h string.h unistd.h])
 
